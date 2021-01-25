@@ -6,9 +6,286 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  
+
+  <header class="header">
+    <div class="container">
+      <!-- header top -->
+      <div class="header__top header-top">
+        <a class="header-top__logo" href="#"><img src="images/logo.svg" alt=""></a>
+        <nav class="header-top__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">ABOUT</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">TEAM</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">BOOKING</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">MENU</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">GALERIE</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">EVENTS</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- header main -->
+      <div class="header__main header-main">
+        <div class="header-main__inner">
+          <div class="header-main__left">
+            <p class="header-main__left-text">Mon - Fri: 8PM - 10PM, Sat - Sun: 8PM - 3AM</p>
+          </div>
+          <div class="header-main__center">
+            <p class="header-main__subtitle subtitle">RESTAURANT</p>
+            <h1 class="header-main__title title">hungry people</h1>
+            <div class="header-main__btns">
+              <button class="header-main__btn btn" type="button" name="button">BOOK TABLE</button>
+              <button class="header-main__btn btn btn-transparent" type="button" name="button">EXPLORE</button>
+            </div>
+          </div>
+          <div class="header-main__social">
+            <ul class="header-main__social-list">
+              <li class="header-main__social-item">
+                <a href="#"><img src="images/facebook.svg" alt=""></a>
+              </li>
+              <li class="header-main__social-item">
+                <a href="#"><img src="images/instagram.svg" alt=""></a>
+              </li>
+              <li class="header-main__social-item">
+                <a href="#"><img src="images/twitter.svg" alt=""></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="header-main__down-btn">
+            <a href="#"><img src="images/down-btn.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <div class="about__inner">
+        <div class="about__left">
+          <h3 class="about__title title">about us</h3>
+          <p class="about__info info info--bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+          <p class="about__info info">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+        </div>
+
+        <div class="about__right">
+          <div class="about__img square">
+            <img src="images/about-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chef">
+    <div class="container">
+      <p class="chef__subtitle subtitle subtitle--white">OUR TEAM</p>
+      <div class="chef__inner">
+        <div class="chef__left">
+          <div class="chef__img square">
+            <img src="images/chef.png" alt="">
+          </div>
+        </div>
+        <div class="chef__right">
+          <h3 class="chef__title title title--white">MASTER CHEF</h3>
+          <p class="about__info info info--bold info--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+          <p class="about__info info info--white">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="book">
+    <div class="container">
+      <div class="book__inner">
+        <div class="book__left">
+          <h3 class="book__title title">book a table</h3>
+          <form class="book__form form" action="index.html" method="post">
+            <input class="book__input input" type="text" name="" value="" placeholder="Name">
+            <input class="book__input input" type="text" name="" value="" placeholder="Email">
+            <input class="book__input input" type="text" name="" value="" placeholder="Phone">
+            <input class="book__input input" type="text" name="" value="" placeholder="People">
+            <input class="book__input input" type="text" name="" value="" placeholder="Date (mm/dd)">
+            <input class="book__input input" type="text" name="" value="" placeholder="Time">
+            <button class="book__btn btn" type="button" name="button">BOOK NOW</button>
+          </form>
+        </div>
+        <div class="book__right">
+          <div class="book__img square">
+            <img src="images/book.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="specialties">
+    <div class="container">
+      <p class="specialties__subtitle subtitle subtitle--white">specialties</p>
+      <div class="specialties__slider">
+
+        <div class="specialties__item">
+          <div class="specialties__inner">
+            <div class="specialties__left">
+              <div class="specialties__img square">
+                <img src="images/item-1.png" alt="">
+              </div>
+            </div>
+            <div class="specialties__right">
+              <h3 class="specialties__title title title--white">chocolate pancakes</h3>
+              <p class="specialties__info info info--bold info--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+              <p class="specialties__info info info--white">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dishes">
+    <div class="container">
+      <h3 class="dishes__title title">DELICIOUS MENU</h3>
+      <p class="dishes__info info info--bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+      <div class="dishes__menu">
+        <ul class="dishes__menu-list">
+          <li class="dishes__menu-item"><a class="dishes__menu-link" href="">SOUPE</a></li>
+          <li class="dishes__menu-item"><a class="dishes__menu-link" href="">PIZZA</a></li>
+          <li class="dishes__menu-item"><a class="dishes__menu-link" href="">PASTA</a></li>
+          <li class="dishes__menu-item"><a class="dishes__menu-link" href="">DESERT</a></li>
+          <li class="dishes__menu-item"><a class="dishes__menu-link" href="">WINE</a></li>
+          <li class="dishes__menu-item"><a class="dishes__menu-link" href="">BEER</a></li>
+          <li class="dishes__menu-item"><a class="dishes__menu-link" href="">DRINKS</a></li>
+        </ul>
+      </div>
+
+      <div class="dishes__content">
+        <!-- col -->
+        <div class="dishes__col">
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+        </div>
+
+        <!-- col -->
+        <div class="dishes__col">
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+        </div>
+
+        <!-- col -->
+        <div class="dishes__col">
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+          <!-- item -->
+          <div class="dishes__item">
+            <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
+            <p class="dishes__ingredients">Integer ullamcorper neque eu purus euismod</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
   <script src="js/main/min.js"></script>
 </body>
 </html>

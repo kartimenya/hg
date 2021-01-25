@@ -1,1 +1,267 @@
-@import "glonal";
+@import "global";
+
+.header{
+  background-image: url(../images/header-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+.header-top{
+  position: relative;
+  &__logo{
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// menu
+.menu{
+  &__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+  }
+  &__item{
+    flex-basis: 133px;
+    text-align: center;
+    &:nth-child(4){
+      margin-right: 220px;
+    }
+  }
+  &__link{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+  }
+}
+
+// header-main
+.header-main{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 200px);
+  &__subtitle{
+    color: #FFFFFF;
+  }
+  &__title{
+    font-size: 96px;
+    line-height: 96px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  &__btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  &__left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__left-text{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    writing-mode: tb-rl;
+    transform: rotate(180deg);
+    color: #FFFFFF;
+  }
+  &__social{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  &__down-btn{
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+// about
+.about{
+  padding: 50px 0;
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left{
+    max-width: 600px;
+  }
+  &__title{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__img{
+    margin-right: 70px;
+    &::after{
+      top: 109px;
+      right: -70px;
+    }
+  }
+  &__info{
+    margin-bottom: 20px;
+  }
+}
+
+// chef
+.chef{
+  background-image: url(../images/chef-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__right{
+    max-width: 600px;
+  }
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__img{
+    margin-left: 70px;
+    &::after{
+      top: 109px;
+      left: -70px;
+    }
+  }
+}
+
+// book
+.book{
+  padding: 50px 0;
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__left{
+    max-width: 565px;
+  }
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  &__input{
+    width: 277px;
+  }
+  &__btn{
+    width: 100%;
+  }
+  &__img{
+    margin-right: 70px;
+    &::after{
+      top: 109px;
+      right: -70px;
+    }
+  }
+}
+
+// specialties
+.specialties{
+  background-image: url(../images/specialtys-bg-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__right{
+    max-width: 600px;
+  }
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__info{
+    margin-bottom: 20px;
+  }
+  &__img{
+    margin-left: 70px;
+    &::after{
+      top: 109px;
+      left: -70px;
+    }
+  }
+}
+
+// dishes
+.dishes{
+  padding: 100px 0;
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__info{
+    max-width: 565px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  &__menu{
+    margin-bottom: 50px;
+  }
+  &__menu-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__menu-item{
+    flex-basis: 120px;
+    padding: 14px 0;
+    border-right: 1px solid rgba(51, 51, 51, 0.2);
+    text-align: center;
+    &:last-child{
+      border-right: none;
+    }
+  }
+  &__menu-link{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+  }
+  &__name{
+    font-size: 18px;
+    line-height: 18px;
+    color: #333333;
+  }
+  &__ingredients{
+    font-size: 12px;
+    line-height: 18px;
+    color: #333333;
+  }
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item{
+    margin-bottom: 25px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
