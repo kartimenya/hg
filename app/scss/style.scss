@@ -106,13 +106,6 @@
     text-align: center;
     margin-bottom: 20px;
   }
-  &__img{
-    margin-right: 70px;
-    &::after{
-      top: 109px;
-      right: -70px;
-    }
-  }
   &__info{
     margin-bottom: 20px;
   }
@@ -135,13 +128,6 @@
   }
   &__title{
     margin-bottom: 20px;
-  }
-  &__img{
-    margin-left: 70px;
-    &::after{
-      top: 109px;
-      left: -70px;
-    }
   }
 }
 
@@ -170,13 +156,6 @@
   &__btn{
     width: 100%;
   }
-  &__img{
-    margin-right: 70px;
-    &::after{
-      top: 109px;
-      right: -70px;
-    }
-  }
 }
 
 // specialties
@@ -199,13 +178,6 @@
   }
   &__info{
     margin-bottom: 20px;
-  }
-  &__img{
-    margin-left: 70px;
-    &::after{
-      top: 109px;
-      left: -70px;
-    }
   }
 }
 
@@ -262,6 +234,138 @@
     margin-bottom: 25px;
     &:last-child{
       margin-bottom: 0;
+    }
+  }
+}
+
+//events
+.events{
+  background-image: url(../images/br-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  &__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__photo{
+    img{
+      width: 100%;
+    }
+  }
+  &__photo-text{
+    display: block;
+    font-size: 24px;
+    line-height: 12px;
+    text-indent: 20px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    writing-mode: tb-rl;
+
+    height: 83%;
+    width: 80px;
+    padding-right: 31px;
+    background: #000;
+    position: absolute;
+    top: 8%;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    &-1{
+      right: 8%;
+    }
+    &-2{
+      left: 8%;
+      transform: rotate(180deg);
+    }
+  }
+  &__bottom-text{
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
+.gallery{
+  &__inner{
+    display: flex;
+    align-items: center;
+  }
+  img{
+    width: 25%;
+    cursor: pointer;
+  }
+}
+
+
+// contact
+.contact{
+  padding: 100px 0;
+  &__title{
+    margin-bottom: 20px;
+  }
+  &__info{
+    margin-bottom: 50px;
+  }
+}
+.contact-form{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  &__inputs{
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  &__input{
+    flex-basis: 420px;
+  }
+  &__texarea{
+    width: 100%;
+    min-width: 100%;
+    height: 120px;
+    max-height: 120px;
+    min-height: 120px;
+  }
+  &__bottom{
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__bottom-left{
+    width: 600px;
+  }
+  &__bottom-list{
+    display: flex;
+    gap: 20px;
+  }
+  &__bottom-link{
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;
+    white-space: nowrap;
+  }
+  &__btn{
+    flex-basis: 640px;
+  }
+}
+
+
+.footer{
+  background: rgba(0, 0, 0, 0.9);
+  padding: 50px 0;
+  &__text{
+    text-align: center;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    span{
+      font-weight: 700;
     }
   }
 }

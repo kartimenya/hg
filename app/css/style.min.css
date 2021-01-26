@@ -104,6 +104,24 @@ a {
   position: absolute;
 }
 
+.square--left {
+  margin-left: 70px;
+}
+
+.square--left::after {
+  top: 109px;
+  left: -70px;
+}
+
+.square--right {
+  margin-right: 70px;
+}
+
+.square--right::after {
+  top: 109px;
+  right: -70px;
+}
+
 .input {
   border: none;
   background: #E5E5E5;
@@ -306,15 +324,6 @@ a {
   margin-bottom: 20px;
 }
 
-.about__img {
-  margin-right: 70px;
-}
-
-.about__img::after {
-  top: 109px;
-  right: -70px;
-}
-
 .about__info {
   margin-bottom: 20px;
 }
@@ -345,15 +354,6 @@ a {
 
 .chef__title {
   margin-bottom: 20px;
-}
-
-.chef__img {
-  margin-left: 70px;
-}
-
-.chef__img::after {
-  top: 109px;
-  left: -70px;
 }
 
 .book {
@@ -397,15 +397,6 @@ a {
   width: 100%;
 }
 
-.book__img {
-  margin-right: 70px;
-}
-
-.book__img::after {
-  top: 109px;
-  right: -70px;
-}
-
 .specialties {
   background-image: url(../images/specialtys-bg-1.jpg);
   background-position: center;
@@ -436,15 +427,6 @@ a {
 
 .specialties__info {
   margin-bottom: 20px;
-}
-
-.specialties__img {
-  margin-left: 70px;
-}
-
-.specialties__img::after {
-  top: 109px;
-  left: -70px;
 }
 
 .dishes {
@@ -526,4 +508,176 @@ a {
 
 .dishes__item:last-child {
   margin-bottom: 0;
+}
+
+.events {
+  background-image: url(../images/br-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+
+.events__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.events__photo img {
+  width: 100%;
+}
+
+.events__photo-text {
+  display: block;
+  font-size: 24px;
+  line-height: 12px;
+  text-indent: 20px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  -webkit-writing-mode: tb-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: tb-rl;
+  height: 83%;
+  width: 80px;
+  padding-right: 31px;
+  background: #000;
+  position: absolute;
+  top: 8%;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.events__photo-text-1 {
+  right: 8%;
+}
+
+.events__photo-text-2 {
+  left: 8%;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.events__bottom-text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  text-align: center;
+}
+
+.gallery__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gallery img {
+  width: 25%;
+  cursor: pointer;
+}
+
+.contact {
+  padding: 100px 0;
+}
+
+.contact__title {
+  margin-bottom: 20px;
+}
+
+.contact__info {
+  margin-bottom: 50px;
+}
+
+.contact-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+}
+
+.contact-form__inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.contact-form__input {
+  -ms-flex-preferred-size: 420px;
+      flex-basis: 420px;
+}
+
+.contact-form__texarea {
+  width: 100%;
+  min-width: 100%;
+  height: 120px;
+  max-height: 120px;
+  min-height: 120px;
+}
+
+.contact-form__bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-form__bottom-left {
+  width: 600px;
+}
+
+.contact-form__bottom-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form__bottom-link {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  white-space: nowrap;
+}
+
+.contact-form__btn {
+  -ms-flex-preferred-size: 640px;
+      flex-basis: 640px;
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.9);
+  padding: 50px 0;
+}
+
+.footer__text {
+  text-align: center;
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.footer__text span {
+  font-weight: 700;
 }

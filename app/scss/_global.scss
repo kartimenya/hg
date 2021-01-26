@@ -90,6 +90,20 @@ a{
     height: 250px;
     position: absolute;
   }
+  &--left{
+    margin-left: 70px;
+    &::after{
+      top: 109px;
+      left: -70px;
+    }
+  }
+  &--right{
+    margin-right: 70px;
+    &::after{
+      top: 109px;
+      right: -70px;
+    }
+  }
 }
 
 .input{
