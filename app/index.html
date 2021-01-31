@@ -16,16 +16,21 @@
       <div class="header__top header-top">
         <a class="header-top__logo" href="#"><img src="images/logo.svg" alt=""></a>
         <nav class="header-top__menu menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">ABOUT</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">TEAM</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">BOOKING</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">MENU</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">GALERIE</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">EVENTS</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">CONTACT</a></li>
-          </ul>
+          <div class="menu__icon icon-menu">
+            <span></span>
+          </div>
+          <div class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">ABOUT</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">TEAM</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">BOOKING</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">MENU</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">GALERIE</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">EVENTS</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">CONTACT</a></li>
+            </ul>
+          </div>
         </nav>
       </div>
 
@@ -62,17 +67,17 @@
           </div>
         </div>
       </div>
-
     </div>
   </header>
 
+  <!-- about -->
   <section class="about">
     <div class="container">
       <div class="about__inner">
         <div class="about__left">
-          <h3 class="about__title title">about us</h3>
-          <p class="about__info info info--bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
-          <p class="about__info info">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+          <h3 class="about__title title wow animate__animated animate__fadeInRightBig" data-wow-offset="200">about us</h3>
+          <p class="about__info info info--bold wow animate__animated animate__fadeInRightBig" data-wow-offset="200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+          <p class="about__info info wow animate__animated animate__fadeInRightBig" data-wow-offset="200">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
         </div>
 
         <div class="about__right">
@@ -84,9 +89,10 @@
     </div>
   </section>
 
+  <!-- chef -->
   <section class="chef">
     <div class="container">
-      <p class="chef__subtitle subtitle subtitle--white">OUR TEAM</p>
+      <p class="chef__subtitle subtitle subtitle--white wow animate__animated animate__fadeInUp" data-wow-offset="200">OUR TEAM</p>
       <div class="chef__inner">
         <div class="chef__left">
           <div class="chef__img square square--left">
@@ -94,27 +100,28 @@
           </div>
         </div>
         <div class="chef__right">
-          <h3 class="chef__title title title--white">MASTER CHEF</h3>
-          <p class="about__info info info--bold info--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
-          <p class="about__info info info--white">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+          <h3 class="chef__title title title--white wow animate__animated animate__fadeInLeft" data-wow-offset="200">MASTER CHEF</h3>
+          <p class="about__info info info--bold info--white wow animate__animated animate__fadeInLeft" data-wow-offset="200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+          <p class="about__info info info--white wow animate__animated animate__fadeInLeft" data-wow-offset="200">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- book -->
   <section class="book">
     <div class="container">
       <div class="book__inner">
         <div class="book__left">
           <h3 class="book__title title">book a table</h3>
           <form class="book__form form" action="index.html" method="post">
-            <input class="book__input input" type="text" name="" value="" placeholder="Name">
-            <input class="book__input input" type="text" name="" value="" placeholder="Email">
-            <input class="book__input input" type="text" name="" value="" placeholder="Phone">
-            <input class="book__input input" type="text" name="" value="" placeholder="People">
-            <input class="book__input input" type="text" name="" value="" placeholder="Date (mm/dd)">
-            <input class="book__input input" type="text" name="" value="" placeholder="Time">
-            <button class="book__btn btn" type="button" name="button">BOOK NOW</button>
+            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay="0" type="text" name="" value="" placeholder="Name">
+            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".2s" type="text" name="" value="" placeholder="Email">
+            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".4s" type="text" name="" value="" placeholder="Phone">
+            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".6s" type="text" name="" value="" placeholder="People">
+            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".8s" type="text" name="" value="" placeholder="Date (mm/dd)">
+            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay="1s" type="text" name="" value="" placeholder="Time">
+            <button class="book__btn btn wow animate__animated animate__fadeInUp" data-wow-offset="100" data-wow-delay="1s" type="button" name="button">BOOK NOW</button>
           </form>
         </div>
         <div class="book__right">
@@ -126,9 +133,10 @@
     </div>
   </section>
 
+  <!-- specialties -->
   <section class="specialties">
     <div class="container">
-      <p class="specialties__subtitle subtitle subtitle--white">specialties</p>
+      <p class="specialties__subtitle subtitle subtitle--white wow animate__animated animate__fadeInUp" data-wow-offset="200">specialties</p>
       <div class="specialties__slider">
 
         <div class="specialties__item">
@@ -139,9 +147,9 @@
               </div>
             </div>
             <div class="specialties__right">
-              <h3 class="specialties__title title title--white">chocolate pancakes</h3>
-              <p class="specialties__info info info--bold info--white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
-              <p class="specialties__info info info--white">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+              <h3 class="specialties__title title title--white wow animate__animated animate__fadeInUp" data-wow-offset="100">chocolate pancakes</h3>
+              <p class="specialties__info info info--bold info--white wow animate__animated animate__fadeInUp" data-wow-offset="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+              <p class="specialties__info info info--white wow animate__animated animate__fadeInUp" data-wow-offset="100">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
             </div>
           </div>
         </div>
@@ -149,11 +157,12 @@
     </div>
   </section>
 
+  <!-- dishes -->
   <section class="dishes">
     <div class="container">
-      <h3 class="dishes__title title">DELICIOUS MENU</h3>
-      <p class="dishes__info info info--bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
-      <div class="dishes__menu">
+      <h3 class="dishes__title title wow animate__animated animate__fadeInDown" data-wow-offset="100">DELICIOUS MENU</h3>
+      <p class="dishes__info info info--bold wow animate__animated animate__fadeInDown" data-wow-offset="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+      <div class="dishes__menu wow animate__animated animate__fadeInDown" data-wow-offset="100">
         <ul class="dishes__menu-list">
           <li class="dishes__menu-item"><a class="dishes__menu-link" href="">SOUPE</a></li>
           <li class="dishes__menu-item"><a class="dishes__menu-link" href="">PIZZA</a></li>
@@ -167,7 +176,7 @@
 
       <div class="dishes__content">
         <!-- col -->
-        <div class="dishes__col">
+        <div class="dishes__col wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".2s">
           <!-- item -->
           <div class="dishes__item">
             <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
@@ -206,7 +215,7 @@
         </div>
 
         <!-- col -->
-        <div class="dishes__col">
+        <div class="dishes__col wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".4s">
           <!-- item -->
           <div class="dishes__item">
             <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
@@ -245,7 +254,7 @@
         </div>
 
         <!-- col -->
-        <div class="dishes__col">
+        <div class="dishes__col wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".6s">
           <!-- item -->
           <div class="dishes__item">
             <p class="dishes__name">PIZZA QUATRO STAGIONI  . . . .   55,68 USD</p>
@@ -287,18 +296,19 @@
     </div>
   </section>
 
+  <!-- events -->
   <section class="events">
     <div class="container">
-      <p class="events__subtitle subtitle subtitle--white">PRIVATE EVENTS</p>
+      <p class="events__subtitle subtitle subtitle--white wow animate__animated animate__fadeInUp" data-wow-offset="100">PRIVATE EVENTS</p>
       <div class="events__content">
         <div class="events__left">
-          <div class="events__photo square square--left">
+          <div class="events__photo square square--left wow animate__animated animate__fadeInLeftBig" data-wow-offset="100">
             <img src="images/private-1.png" alt="">
             <p class="events__photo-text events__photo-text-1">weddings</p>
           </div>
         </div>
         <div class="events__right">
-          <div class="events__photo square square--right">
+          <div class="events__photo square square--right wow animate__animated animate__fadeInRightBig" data-wow-offset="100">
             <img src="images/private-2.png" alt="">
             <p class="events__photo-text events__photo-text-2">corporate pzrties</p>
           </div>
@@ -308,26 +318,28 @@
     </div>
   </section>
 
+  <!-- gallery -->
   <section class="gallery">
     <div class="gallery__inner">
-      <img src="images/img-inst-1.jpg" alt="">
-      <img src="images/img-inst-2.jpg" alt="">
-      <img src="images/img-inst-3.jpg" alt="">
-      <img src="images/img-inst-4.jpg" alt="">
+      <a class="wow animate__animated animate__fadeIn" data-wow-offset="100" data-wow-delay=".2s" href="images/img-inst-1.jpg"><img src="images/img-inst-1.jpg" alt=""></a>
+      <a class="wow animate__animated animate__fadeIn" data-wow-offset="100" data-wow-delay=".4s" href="images/img-inst-2.jpg"><img src="images/img-inst-2.jpg" alt=""></a>
+      <a class="wow animate__animated animate__fadeIn" data-wow-offset="100" data-wow-delay=".6s" href="images/img-inst-3.jpg"><img src="images/img-inst-3.jpg" alt=""></a>
+      <a class="wow animate__animated animate__fadeIn" data-wow-offset="100" data-wow-delay=".8s" href="images/img-inst-4.jpg"><img src="images/img-inst-4.jpg" alt=""></a>
     </div>
   </section>
 
+  <!-- contact -->
   <section class="contact">
     <div class="container">
-      <h3 class="contact__title title">CONTACT</h3>
-      <p class="contact__info info info--bold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+      <h3 class="contact__title title wow animate__animated animate__fadeInUp" data-wow-offset="100">CONTACT</h3>
+      <p class="contact__info info info--bold wow animate__animated animate__fadeInUp" data-wow-offset="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
       <form class="contact__form contact-form" action="index.html" method="post">
         <div class="contact-form__inputs">
-          <input class="contact-form__input input" type="text" name="" value="" placeholder="Nume">
-          <input class="contact-form__input input" type="text" name="" value="" placeholder="Email">
-          <input class="contact-form__input input" type="text" name="" value="" placeholder="Phone">
+          <input class="contact-form__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".2s" type="text" name="" value="" placeholder="Nume">
+          <input class="contact-form__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".4s" type="text" name="" value="" placeholder="Email">
+          <input class="contact-form__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".6s" type="text" name="" value="" placeholder="Phone">
         </div>
-        <textarea class="contact-form__texarea input" name="name" rows="8" cols="80" placeholder="Message"></textarea>
+        <textarea class="contact-form__texarea input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".2s" name="name" rows="8" cols="80" placeholder="Message"></textarea>
         <div class="contact-form__bottom">
           <div class="contact-form__bottom-left">
             <ul class="contact-form__bottom-list">
@@ -352,6 +364,6 @@
       <p class="footer__text">© Copyright <span>Mindblister</span> 2019</p>
     </div>
   </footer>
-  <script src="js/main/min.js"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>

@@ -46,6 +46,10 @@ a{
   &--white{
     color: #fff;
   }
+  @media (max-width: 800px) {
+    font-size: 26px;
+    line-height: 38px;
+  }
 }
 
 .btn{
@@ -94,14 +98,43 @@ a{
     margin-left: 70px;
     &::after{
       top: 109px;
-      left: -70px;
+      left: -10%;
     }
   }
   &--right{
     margin-right: 70px;
     &::after{
       top: 109px;
-      right: -70px;
+      right: -10%;
+    }
+  }
+  @media (max-width: 960px) {
+    & img{
+      width: 400px;
+    }
+    &::after{
+      border: 15px solid #E8C300;
+      width: 78%;
+      height: 78%;
+    }
+    &--left{
+      margin-left: 0;
+      &::after{
+        top: 8%;
+        left: 8%;
+      }
+    }
+    &--right{
+      margin-right: 0;
+      &::after{
+        top: 8%;
+        right: 8%;
+      }
+    }
+  }
+  @media (max-width: 500px) {
+    & img{
+      width: 100%;
     }
   }
 }
