@@ -26,6 +26,22 @@ $(document).ready(function() {
 			}
 		}
 	});
+
+
+  $('.header-main__down-btn a').on('click', function() {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    }, {
+        duration: 600,  
+        easing: "linear"
+    });
+
+    return false;
+  });
+
 });
 
 new WOW().init();

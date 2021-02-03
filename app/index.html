@@ -11,29 +11,32 @@
 <body>
 
   <header class="header">
-    <div class="container">
+
       <!-- header top -->
       <div class="header__top header-top">
-        <a class="header-top__logo" href="#"><img src="images/logo.svg" alt=""></a>
-        <nav class="header-top__menu menu">
-          <div class="menu__icon icon-menu">
-            <span></span>
-          </div>
-          <div class="menu__body">
-            <ul class="menu__list">
-              <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">ABOUT</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">TEAM</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">BOOKING</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">MENU</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">GALERIE</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">EVENTS</a></li>
-              <li class="menu__item"><a class="menu__link" href="#">CONTACT</a></li>
-            </ul>
-          </div>
-        </nav>
+        <div class="container">
+          <a class="header-top__logo" href="#"><img src="images/logo.svg" alt=""></a>
+          <nav class="header-top__menu menu">
+            <div class="menu__icon icon-menu">
+              <span></span>
+            </div>
+            <div class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">ABOUT</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">TEAM</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">BOOKING</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">MENU</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">GALERIE</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">EVENTS</a></li>
+                <li class="menu__item"><a class="menu__link" href="#">CONTACT</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </div>
 
+      <div class="container">
       <!-- header main -->
       <div class="header__main header-main">
         <div class="header-main__inner">
@@ -62,8 +65,8 @@
             </ul>
           </div>
 
-          <div class="header-main__down-btn">
-            <a href="#"><img src="images/down-btn.svg" alt=""></a>
+          <div class="header-main__down-btn bounce-2">
+            <a href="#about"><img src="images/down-btn.svg" alt=""></a>
           </div>
         </div>
       </div>
@@ -71,13 +74,13 @@
   </header>
 
   <!-- about -->
-  <section class="about">
+  <section id="about" class="about">
     <div class="container">
       <div class="about__inner">
         <div class="about__left">
-          <h3 class="about__title title wow animate__animated animate__fadeInRightBig" data-wow-offset="200">about us</h3>
-          <p class="about__info info info--bold wow animate__animated animate__fadeInRightBig" data-wow-offset="200">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
-          <p class="about__info info wow animate__animated animate__fadeInRightBig" data-wow-offset="200">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
+          <h3 class="about__title title wow animate__animated animate__fadeInRightBig" data-wow-offset="100">about us</h3>
+          <p class="about__info info info--bold wow animate__animated animate__fadeInRightBig" data-wow-offset="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
+          <p class="about__info info wow animate__animated animate__fadeInRightBig" data-wow-offset="100">Integer ullamcorper neque eu purus euismod, ac faucibus mauris posuere. Morbi non ultrices ligula. Sed dictum, enim sed ullamcorper feugiat, dui odio vehicula eros, a sollicitudin lorem quam nec sem. Mauris tincidunt feugiat diam convallis pharetra. Nulla facilisis semper laoreet.</p>
         </div>
 
         <div class="about__right">
@@ -115,12 +118,12 @@
         <div class="book__left">
           <h3 class="book__title title">book a table</h3>
           <form class="book__form form" action="index.html" method="post">
-            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay="0" type="text" name="" value="" placeholder="Name">
-            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".2s" type="text" name="" value="" placeholder="Email">
-            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".4s" type="text" name="" value="" placeholder="Phone">
-            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".6s" type="text" name="" value="" placeholder="People">
-            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".8s" type="text" name="" value="" placeholder="Date (mm/dd)">
-            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay="1s" type="text" name="" value="" placeholder="Time">
+            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay="0" type="text" name="name" value="" placeholder="Name">
+            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".2s" type="text" name="email" value="" placeholder="Email">
+            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".4s" type="text" name="phone" value="" placeholder="Phone">
+            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".6s" type="text" name="people" value="" placeholder="People">
+            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".8s" type="text" name="date" value="" placeholder="Date (mm/dd)">
+            <input class="book__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay="1s" type="text" name="time" value="" placeholder="Time">
             <button class="book__btn btn wow animate__animated animate__fadeInUp" data-wow-offset="100" data-wow-delay="1s" type="button" name="button">BOOK NOW</button>
           </form>
         </div>
@@ -335,11 +338,11 @@
       <p class="contact__info info info--bold wow animate__animated animate__fadeInUp" data-wow-offset="100">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at velit maximus, molestie est a, tempor magna.</p>
       <form class="contact__form contact-form" action="index.html" method="post">
         <div class="contact-form__inputs">
-          <input class="contact-form__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".2s" type="text" name="" value="" placeholder="Nume">
-          <input class="contact-form__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".4s" type="text" name="" value="" placeholder="Email">
-          <input class="contact-form__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".6s" type="text" name="" value="" placeholder="Phone">
+          <input class="contact-form__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".2s" type="text" name="nume" value="" placeholder="Nume">
+          <input class="contact-form__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".4s" type="text" name="email" value="" placeholder="Email">
+          <input class="contact-form__input input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".6s" type="text" name="phone" value="" placeholder="Phone">
         </div>
-        <textarea class="contact-form__texarea input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".2s" name="name" rows="8" cols="80" placeholder="Message"></textarea>
+        <textarea class="contact-form__texarea input wow animate__animated animate__fadeInLeft" data-wow-offset="100" data-wow-delay=".2s" name="message" rows="8" cols="80" placeholder="Message"></textarea>
         <div class="contact-form__bottom">
           <div class="contact-form__bottom-left">
             <ul class="contact-form__bottom-list">
@@ -354,9 +357,6 @@
     </div>
   </section>
 
-  <section class="map">
-
-  </section>
 
   <!-- footer -->
   <footer class="footer">

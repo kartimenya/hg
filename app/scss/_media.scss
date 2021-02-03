@@ -39,10 +39,11 @@
   .header-top{
     &__logo{
       z-index: 10000;
-      left: 0;
-      transform: translate(0) rotate(0deg);
+      left: 15px;
+      transform: rotate(0deg);
       &.active{
-        transform: translate(0) rotate(360deg);
+        position: fixed;
+        transform: rotate(360deg);
       }
       img{
         width: 80px;
